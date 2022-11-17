@@ -1,0 +1,71 @@
+﻿@model QuizVM
+@{
+    ViewData["Title"] = "Dungeons and Dragons Quiz";
+}
+
+<div>
+    <h1 class="display-4">D&D Quiz</h1>
+    <form method="post" class="container jumbotron">
+        <p class="row font-weight-bold">1. In most editions of D&D, the barbarian class has a unique ability that lets them inflict extra damage. What is that ability called?</p>
+        <div class="row">
+            <label for="fury" class="col-1">Fury</label>
+            <input asp-for="UserAnswer1" type="radio" value="fury" class="form-control col-1" />
+        </div>
+        <div class="row">
+            <label for="intimidation" class="col-1">Intimidation</label>
+            <input asp-for="UserAnswer1" type="radio" value="intimidation" class="form-control col-1" />
+        </div>
+        <div class="row">
+            <label for="rage" class="col-1">Rage</label>
+            <input asp-for="UserAnswer1" type="radio" value="rage" class="form-control col-1" />
+        </div>
+        <p class="font-weight-bold">Answer: @Model?.RightOrWrong1</p>
+        <br />
+        <p class="row font-weight-bold">2. There are two main types of dragons, metallic and …</p>
+        <div class="row">
+            <label for="chromatic" class="col-1">Chromatic</label>
+            <input asp-for="UserAnswer2" type="radio" value="chromatic" class="form-control col-1" />
+        </div>
+        <div class="row">
+            <label for="aberrant" class="col-1">Aberrant</label>
+            <input asp-for="UserAnswer2" type="radio" value="aberrant" class="form-control col-1" />
+        </div>
+        <div class="row">
+            <label for="abyssal" class="col-1">Abyssal</label>
+            <input asp-for="UserAnswer2" type="radio" value="abyssal" class="form-control col-1" />
+        </div>
+        <p class="font-weight-bold">Answer: @Model?.RightOrWrong2</p>
+        <br />
+        <p class="row font-weight-bold">3. What is another name for a mind-flayer?</p>
+        <div class="row">
+            <label for="illithid" class="col-1">Illithid</label>
+            <input asp-for="UserAnswer3" type="radio" value="illithid" class="form-control col-1" />
+        </div>
+        <div class="row">
+            <label for="kuo-toa" class="col-1">Kuo-toa</label>
+            <input asp-for="UserAnswer3" type="radio" value="kuo-toa" class="form-control col-1" />
+        </div>
+        <div class="row">
+            <label for="malcanthet" class="col-1">Malcanthet</label>
+            <input asp-for="UserAnswer3" type="radio" value="malcanthet" class="form-control col-1" />
+        </div>
+        <p class="font-weight-bold">Answer: @Model?.RightOrWrong3</p>
+        <br />
+        <p class="row font-weight-bold">4. The measure of a character's current health in D&D is called what?</p>
+        <div class="row">
+            <label for="vitality" class="col-1">Vitality</label>
+            <input asp-for="UserAnswer4" type="radio" value="vitality" class="form-control col-1" />
+        </div>
+        <div class="row">
+            <label for="ac" class="col-1">Armor Class</label>
+            <input asp-for="UserAnswer4" type="radio" value="ac" class="form-control col-1" />
+        </div>
+        <div class="row">
+            <label for="hp" class="col-1">Hit Points</label>
+            <input asp-for="UserAnswer4" type="radio" value="hp" class="form-control col-1" />
+        </div>
+            <p class="font-weight-bold">Answer: @Model?.RightOrWrong4</p>
+        <br />
+        <input type="submit" class="form-control btn" />
+    </form>
+</div>

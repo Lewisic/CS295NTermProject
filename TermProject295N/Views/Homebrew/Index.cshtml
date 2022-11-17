@@ -1,0 +1,58 @@
+﻿@model List<Homebrew>
+@{
+    ViewData["Title"] = "Homebrew Items";
+}
+
+<h1 class="display-4">Filter Items</h1>
+    Enter a item name:
+<form method="post" class="container">
+    <div class="row p-2">
+        <label for="ItemName" class="control-label col-md-1">Item Name</label>
+        <input name="ItemName" class="form-control col-md-6" />
+    </div>
+    <div class="row p-2">
+        <button type="submit" class="form-control btn btn-success col-2">Submit</button>
+        <a asp-action="Index" class="btn btn-secondary col-3">Reset</a>
+    </div>
+</form>
+
+<form method="post" class="container">
+    <div class="row p-2">
+        <label for="UserName" class="control-label col-md-1">User Name</label>
+        <input name="UserName" class="form-control col-md-6" />
+    </div>
+    <div class="row p-2">
+        <button type="submit" class="form-control btn btn-success col-2">Submit</button>
+    </div>
+</form>
+
+<h1 class="display-4">Homebrew Items</h1>
+
+@foreach (Homebrew item in Model)
+{
+    <p>
+        <strong class="m-3">Item Name:</strong>
+        @item.ItemName<br />
+        <strong class="m-3">Item Rarity:</strong>
+        @item.ItemRarity<br />
+        <strong class="m-3">Item Type:</strong>
+        @item.ItemType<br />
+        <strong class="m-3">Attunement:</strong>
+        @if (item.Attunement == true)
+        {
+            @($"Yes")
+        }
+        else
+        {
+            @($"No")
+        }<br />
+        <strong class="m-3">Item Effect:</strong>
+        @item.ItemEffect<br />
+        <strong class="m-3">User Name:</strong>
+        @item.UserName<br />
+        <strong class="m-3">Date Added:</strong>
+        @item.DateAdded<br />
+    </p>
+}
+
+
