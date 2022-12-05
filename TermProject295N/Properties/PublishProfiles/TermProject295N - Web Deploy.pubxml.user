@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzf1G1kIgY0mIoyN16KE+mAAAAAACAAAAAAAQZgAAAAEAACAAAABaekOdkPKZI1PrIbXAIQ40cdUXcH76VA10Lor7BXtEFgAAAAAOgAAAAAIAACAAAAAYyRyCKVMhdGtXePKWRpzs0ryH7IXGcOvtbDtwgyUy8YAAAABwsoLd2+njJkun2Sg/CPG8UJqBH7Z0P7P/tWy3vy9cBMzcz/7BmoFAI1HbSDK6bnWFB3tYfoLREY3DrmZWqW1cQKL9FJz+mW8J3VkqzNnf65jGP7isjUQBfY5/HRBxBY1cK4GGLU93sG4cUWivvjrS7IIik4XN+5eXfbE57/f7kkAAAAARLWDgx3j0ugOoC5hLHNYWKVlz1ekLjJVHWmiFuXwdt7olmPS4UPkOTy6AZMoGYvaldT2u9q0/VztZns8qzTId</EncryptedPassword>
+    <History>True|2022-12-04T06:52:55.8198188Z;False|2022-12-03T22:50:33.3650748-08:00;False|2022-12-03T22:48:39.8956213-08:00;False|2022-12-03T22:45:19.6914502-08:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="ConnectionString">
+      <Value>Server=tcp:termproject295n.database.windows.net,1433%3bInitial Catalog=TermProject295N%3bPersist Security Info=False%3bUser ID=Isaacl98%3bPassword=Iscl9461%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="TermProject295N.ApplicationDbContext">
+      <Value>Server=tcp:termproject295n.database.windows.net,1433%3bInitial Catalog=TermProject295N%3bPersist Security Info=False%3bUser ID=Isaacl98%3bPassword=Iscl9461%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

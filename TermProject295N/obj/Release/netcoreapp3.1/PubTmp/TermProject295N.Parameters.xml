@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="TermProject295N" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\isaac\\Desktop\\CS295N\\TermProject295N\\TermProject295N\\obj\\Release\\netcoreapp3\.1\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="TermProject295N.ApplicationDbContext" description="" value="Server=tcp:termproject295n.database.windows.net,1433;Initial Catalog=TermProject295N;Persist Security Info=False;User ID=Isaacl98;Password=Iscl9461;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\isaac\\Desktop\\CS295N\\TermProject295N\\TermProject295N\\obj\\Release\\netcoreapp3\.1\\PubTmp\\EFSQLScripts\\TermProject295N\.ApplicationDbContext\.sql$" />
+  </parameter>
+</parameters>
